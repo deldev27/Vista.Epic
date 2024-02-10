@@ -1,0 +1,91 @@
+// Базовые стили для страницы
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@include fluid-text(14, 16);
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	line-height: 1.28;
+	color: var(--white-color);
+	background-color: var(--background-color);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: 0.2s;
+}
+
+a {
+	color: inherit;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1 {
+	@include fluid-text(16, 114);
+	font-weight: 700;
+}
+
+h2 {
+	@include fluid-text(16, 67);
+}
+
+h3 {
+	@include fluid-text(16, 32);
+}
+
+.container {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-x);
+}
+
+.title {
+	@include fluid-text(16, 21);
+	color: var(--accent-color);
+	line-height: var(--line-height-title);
+}
+
+.subtitle {
+	@include fluid-text(16, 67);
+	color: var(--white-color);
+	line-height: var(--line-height-subtitle);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
+}

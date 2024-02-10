@@ -1,0 +1,13 @@
+<svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1206_761">
+			<rect id="asset / icon / schedule" width="16.000000" height="16.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1206_761)">
+		<path id="Vector" d="M8 1.33325C5.41992 1.33325 3.33398 3.41992 3.33398 6C3.33398 8.78003 6.28125 12.6133 7.49414 14.0732C7.75977 14.3933 8.24805 14.3933 8.51367 14.0732C9.7207 12.6133 12.668 8.78003 12.668 6C12.668 3.41992 10.5801 1.33325 8 1.33325ZM8 7.6665C7.08008 7.6665 6.33398 6.91992 6.33398 6C6.33398 5.07983 7.08008 4.33325 8 4.33325C8.91992 4.33325 9.66797 5.07983 9.66797 6C9.66797 6.91992 8.91992 7.6665 8 7.6665Z" fill="#FF9D00" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

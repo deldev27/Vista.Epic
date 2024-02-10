@@ -1,0 +1,25 @@
+// Переменные
+:root {
+	--font-family: 'Cabin', sans-serif;
+	--second-family: 'Plus Jakarta Sans', sans-serif;
+
+	--white-color: #ffffff;
+	--accent-color: #ff9d00;
+	--background-color: #090605;
+	--background-color-2: #252323;
+	--background-blur-color: rgba(71, 71, 71, 0.42);
+	--light-gray-color: #d6d6d6;
+	--heading-color: #1f1f1f;
+	--main-text-color: #484848;
+
+	--container-width: 1440px;
+	--container-padding-x: 98px;
+
+	--content-padding-y: 80px;
+
+	--line-height-h1: calc(128px / 114px);
+	--line-height-title: calc(24px / 21px);
+	--line-height-subtitle: calc(72px / 67px);
+  --line-height-card-text: calc(32px / 28px)
+	--line-height-text: calc(24px / 16px);
+}

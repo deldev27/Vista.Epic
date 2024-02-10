@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Vista.Epic</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__inner container">
+
+        <a class="header__logo logo" href="#">
+          <img class="logo__image" src="./images/header/logo.svg" alt="Logo Vista.Epic" width="176" height="40"
+            loading="lazy">
+        </a>
+
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#about-us">
+                About Us
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#destinations">
+                Destination
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#contact-us">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__buttons hidden-mobile">
+          <button class="header__button button">
+            <img class="header__button-image" src="./images/header/search.svg" alt="Icon search" type="button"
+              width="32" height="32" loading="lazy" />
+          </button>
+          <button class="header__button button">
+            <img class="header__button-image" src="./images/header/language.svg" alt="Icon change language"
+              type="button" width="32" height="32" loading="lazy" />
+          </button>
+          <button class="header__button button">
+            <img class="header__button-image" src="./images/header/profile.svg" alt="Icon profile" type="button"
+              width="32" height="32" loading="lazy" />
+          </button>
+        </div>
+        <button class="header__burger-button burger-button visible-mobile" type="button"
+          onclick="mobileOverlay.showModal()">
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </div>
+
+    <article class="header__content">
+      <header class="header__content-header">
+        <h1 class="header__content-title">Explore the World, Your Way</h1>
+        <p class="header__content-text">Li Europan lingues es membres del sam familie. Lor separat existentie es un
+          myth.
+          Por scientie, musica, sport etc, litot
+          Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun
+          vocabules.</p>
+      </header>
+
+      <div class="header__reservation">
+        <div class="header__reservation-card">
+          <label class="header__reservation-label header__reservation-label--image-location" for="location">Choose your
+            destination</label>
+          <select class="header__reservation-select" id="location" name="user-location">
+            <option class="header__reservation-option" value="Sumatra, Indonesia" selected>Sumatra, Indonesia</option>
+            <option class="header__reservation-option" value="City 1, Country 1">City 1, Country 1</option>
+            <option class="header__reservation-option" value="City 2, Country 2">City 2, Country 2</option>
+          </select>
+        </div>
+
+        <div class="header__reservation-card">
+          <label class="header__reservation-label header__reservation-label--image-date" for="date">Pick a date</label>
+          <input class="header__reservation-input" id="date" type="date" name="user-date" value="">
+        </div>
+
+        <div class="header__reservation-card">
+          <label class="header__reservation-label header__reservation-label--image-people" for="people">How many
+            people?</label>
+          <select class="header__reservation-select" id="people" name="amount-people">
+            <option class="header__reservation-option" value="1 People" selected>1 People</option>
+            <option class="header__reservation-option" value="2 People">2 People</option>
+            <option class="header__reservation-option" value="3 People">3 People</option>
+          </select>
+        </div>
+
+        <button class="header__reservation-button button" type="button">
+          Book Now
+          <img class="header__reservation-button-image" src="./images/header/right-arrow-button.svg"
+            alt="Right arrow" />
+        </button>
+      </div>
+    </article>
+
+  </header>
+
+  <main class="main">
+
+    <article class="main__service">
+      <header class="main__service-header">
+        <p class="main__service-title title">Serivce</з>
+        <h2 class="main__service-subtitle">Action Provided By Us</h2>
+      </header>
+
+      <div class="main__service-inner container">
+        <div class="main__service-list">
+          <div class="main__service-item">
+            <img class="main__service-image" src="./images/main/service/travel-accommodation.svg"
+              alt="Icon Travel Accommodation" />
+            <p class="main__service-text">Travel Accommodation</p>
+          </div>
+          <div class="main__service-item">
+            <img class="main__service-image" src="./images/main/service/hotel.svg" alt="Icon The Best Hotel" />
+            <p class="main__service-text">The Best Hotel</p>
+          </div>
+          <div class="main__service-item">
+            <img class="main__service-image" src="./images/main/service/custom-service.svg"
+              alt="Icon 24/7 Customers Services" />
+            <p class="main__service-text">24/7 Customers Services</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="main__destinations" id="destinations">
+      <header class="main__destinations-header">
+        <p class="main__destinations-title title">Destinations</p>
+        <h2 class="main__destinations-subtitle subtitle">Journeys Tailored to Your Wanderlust</h2>
+        <p class="main__destinations-text">Li Europan lingues es membres del sam familie. Lor separat existentie es un
+          myth. Por scientie, musica, sport etc, litot
+          Europa usa li sam vocabular.</p>
+      </header>
+
+      <div class="main__destinations-inner container">
+        <div class="main__destinations-images">
+          <img class="main__destinations-image" src="./images/main/destinations/image1.jpeg" alt="" width="602"
+            height="602" loading="lazy" />
+          <img class="main__destinations-image" src="./images/main/destinations/image2.jpeg" alt="" width="602"
+            height="602" loading="lazy" />
+          <img class="main__destinations-image" src="./images/main/destinations/image3.jpeg" alt="" width="602"
+            height="602" loading="lazy" />
+          <img class="main__destinations-image" src="./images/main/destinations/image4.jpeg" alt="" width="602"
+            height="602" loading="lazy" />
+        </div>
+      </div>
+    </article>
+
+    <article class="main__about-us" id="about-us">
+      <div class="main__about-us-container container">
+        <header class="main__about-us-header">
+          <p class="main__about-us-title title">About Us</p>
+          <h2 class="main__about-us-subtitle subtitle">Wonderful World</h2>
+        </header>
+        <div class="main__about-us-wrapper">
+          <p class="main__about-us-text">Li Europan lingues es membres del sam familie. Lor separat existentie es un
+            myth.
+            Por scientie, musica, sport etc, litot
+            Europa usa li sam vocabular.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <article class="main__about-us-info">
+          <div class="main__about-us-card-wrapper">
+            <div class="main__about-us-card">
+              <img class="main__about-us-card-image" src="./images/main/about-us/land-transport.svg" alt="" width="40"
+                height="40" loading="lazy">
+              <div class="main__about-us-text-wrapper">
+                <h3 class="main__about-us-card-title">Land Transport</h3>
+                <p class="main__about-us-card-text">Li Europan lingues es membres del sam familie. Lor separat
+                  existentie
+                  es
+                  un myth. Por scientie, musica, sport etc, litot
+                  Europa usa li sam vocabular.</p>
+              </div>
+            </div>
+            <div class="main__about-us-card">
+              <img class="main__about-us-card-image" src="./images/main/about-us/air-transport.svg" alt="" width="40"
+                height="40" loading="lazy">
+              <div class="main__about-us-text-wrapper">
+                <h3 class="main__about-us-card-title">Land Transport</h3>
+                <p class="main__about-us-card-text">Li Europan lingues es membres del sam familie. Lor separat
+                  existentie
+                  es
+                  un myth. Por scientie, musica, sport etc, litot
+                  Europa usa li sam vocabular.</p>
+              </div>
+            </div>
+            <div class="main__about-us-card">
+              <img class="main__about-us-text-image" src="./images/main/about-us/sea-transport.svg" alt="" width="40"
+                height="40" loading="lazy">
+              <div class="main__about-us-text-wrapper">
+                <h3 class="main__about-us-card-title">Land Transport</h3>
+                <p class="main__about-us-card-text">Li Europan lingues es membres del sam familie. Lor separat
+                  existentie
+                  es
+                  un myth. Por scientie, musica, sport etc, litot
+                  Europa usa li sam vocabular.</p>
+              </div>
+            </div>
+          </div>
+          <img class="main__about-us-image" src="./images/main/about-us/about-us-image.jpeg" alt="" width="700"
+            height="464" loading="lazy">
+        </article>
+      </div>
+    </article>
+
+    <article class="main__package" id="package">
+      <header class="main__package-header">
+        <p class="main__package-title title">Package</p>
+        <h2 class="main__package-subtitle subtitle">Promotion Determine the Quality of Your Trip</h2>
+      </header>
+
+      <div class="main__package-map">
+        <img src="./images/main/package/package-map.svg" alt="Map with discounts" width="1200" height="654"
+          loading="lazy" />
+      </div>
+    </article>
+
+    <article class="main__travel">
+      <div class="main__travel-wrapper">
+        <header class="main__travel-header">
+          <h2 class="main__travel-title subtitle">Travel With Passion, Explore With Purpose</h2>
+          <p class="main__travel-text">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.
+          </p>
+        </header>
+
+        <button class="main__travel-button button" type="button">
+          Book Now
+          <img class="main__travel-button-image" src="./images/header/right-arrow-button.svg" width="16" height="16"
+            alt="" loading="lazy" />
+        </button>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+
+      <div class="footer__socials">
+        <div class="footer__socials-wrapper">
+          <a href="#">
+            <img class="footer__socials-logo logo" src="./images/header/logo.svg" alt="Logo Vista.Epic" width="176"
+              height="40" loading="lazy">
+          </a>
+          <p class="footer__socials-text"> Europan lingues es membres del sam familie. Lor separat existentie es un
+            myth.
+            Por
+            scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+
+          <ul class="footer__list socials-list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <rect id="fb" width="24.000000" height="24.000000" transform="translate(8.000000 8.000000)"
+                    fill="#FFFFFF" fill-opacity="0" />
+                  <rect id="fbBg" width="40.000000" height="40.000000" fill="#090605" fill-opacity="1.000000" />
+                  <path id="Vector"
+                    d="M22 10C20.6738 10 19.4023 10.5269 18.4648 11.4644C17.5273 12.4021 17 13.6738 17 15L17 18L14 18L14 22L17 22L17 30L21 30L21 22L24 22L25 18L21 18L21 15C21 14.7349 21.1055 14.4805 21.293 14.293C21.4805 14.1055 21.7344 14 22 14L25 14L25 10L22 10Z"
+                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <rect id="twSoc" width="24.000000" height="24.000000" transform="translate(8.000000 8.000000)"
+                    fill="#FFFFFF" fill-opacity="0" />
+                  <rect id="twBg" width="40.000000" height="40.000000" fill="#090605" fill-opacity="1.000000" />
+                  <path id="Vector"
+                    d="M27.8594 12.54C27.2578 11.8477 26.457 11.3567 25.5664 11.134C24.6758 10.9111 23.7402 10.9673 22.8828 11.2944C22.0254 11.6218 21.2891 12.2043 20.7734 12.9639C20.2578 13.7231 19.9883 14.6223 20 15.54L20 16.54C18.2422 16.5857 16.502 16.1958 14.9316 15.4055C13.3613 14.6152 12.0098 13.4487 11 12.01C11 12.01 7 21.01 16 25.01C13.9414 26.408 11.4863 27.1089 9 27.01C18 32.01 29 27.01 29 15.51C29 15.2322 28.9727 14.9541 28.9199 14.6802C29.9395 13.6741 31 11.01 31 11.01C31 11.01 28.9824 12.2021 27.8594 12.54Z"
+                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <rect id="igSoc" width="24.000000" height="24.000000" transform="translate(8.000000 8.000000)"
+                    fill="#FFFFFF" fill-opacity="0" />
+                  <rect id="igBg" width="40.000000" height="40.000000" fill="#090605" fill-opacity="1.000000" />
+                  <path id="Vector"
+                    d="M22.8281 22.8284C23.5781 22.0784 24 21.0608 24 20C24 18.9392 23.5781 17.9216 22.8281 17.1716C22.0781 16.4214 21.0605 16 20 16C18.9395 16 17.9219 16.4214 17.1719 17.1716C16.4219 17.9216 16 18.9392 16 20C16 21.0608 16.4219 22.0784 17.1719 22.8284C17.9219 23.5786 18.9395 24 20 24C21.0605 24 22.0781 23.5786 22.8281 22.8284Z"
+                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round" />
+                  <path id="Vector"
+                    d="M11 16C11 14.6738 11.5273 13.4021 12.4648 12.4644C13.4023 11.5269 14.6738 11 16 11L24 11C25.3262 11 26.5977 11.5269 27.5352 12.4644C28.4727 13.4021 29 14.6738 29 16L29 24C29 25.3262 28.4727 26.5979 27.5352 27.5356C26.5977 28.4731 25.3262 29 24 29L16 29C14.6738 29 13.4023 28.4731 12.4648 27.5356C11.5273 26.5979 11 25.3262 11 24L11 16Z"
+                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" />
+                  <path id="Vector" d="M25.5 14.51L25.5098 14.499" stroke="#FFFFFF" stroke-opacity="1.000000"
+                    stroke-width="1.000000" stroke-linejoin="round" stroke-linecap="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <rect id="ytSoc" width="24.000000" height="24.000000" transform="translate(8.000000 8.000000)"
+                    fill="#FFFFFF" fill-opacity="0" />
+                  <rect id="ytBg" width="40.000000" height="40.000000" fill="#090605" fill-opacity="1.000000" />
+                  <path id="Vector" d="M22 20L18.5 22L18.5 18L22 20Z" fill="#FFFFFF" fill-opacity="1.000000"
+                    fill-rule="nonzero" />
+                  <path id="Vector" d="M18.5 22L18.5 18L22 20L18.5 22Z" stroke="#FFFFFF" stroke-opacity="1.000000"
+                    stroke-width="1.500000" stroke-linejoin="round" />
+                  <path id="Vector"
+                    d="M10 19.292C10 16.397 10 14.949 10.9043 14.0178C11.8105 13.0859 13.2363 13.0459 16.0879 12.9648C17.4375 12.927 18.8184 12.8999 20 12.8999C21.1816 12.8999 22.5605 12.927 23.9121 12.9648C26.7637 13.0459 28.1895 13.0859 29.0938 14.0178C30 14.949 30 16.3979 30 19.292L30 20.7068C30 23.6028 30 25.0498 29.0957 25.9819C28.1895 26.9128 26.7637 26.9539 23.9121 27.0339C22.5625 27.073 21.1816 27.0999 20 27.0999C18.6953 27.0959 17.3926 27.074 16.0879 27.0339C13.2363 26.9539 11.8105 26.9138 10.9043 25.9819C10 25.0498 10 23.6018 10 20.708L10 20.7068L10 19.292Z"
+                    stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__list" id="contact-us">
+          <li class="footer__list-item">
+            <p class="footer__list-item-text">Contact Us</p>
+          </li>
+          <li class="footer__list-item footer__list-item--grid-template">
+            <img class="footer__list-item-image" src="./images/footer/email-icon.svg" width="16" height="16" alt=""
+              loading="lazy">
+            <a class="footer__list-link" href="mailto:hello@website.com">
+              hello@website.com
+            </a>
+          </li>
+          <li class="footer__list-item footer__list-item--grid-template">
+            <img class="footer__list-item-image" src="./images/footer/location-icon.svg" width="16" height="16" alt=""
+              loading="lazy">
+            <a class="footer__list-link" href="#">
+              Riverside Building, County Hall,<br /> London SE1 7PB, United Kingdom
+            </a>
+          </li>
+          <li class="footer__list-item footer__list-item--grid-template">
+            <img class="footer__list-item-image" src="./images/footer/call-icon.svg" width="16" height="16" alt=""
+              loading="lazy">
+            <a class="footer__list-link" href="tel:+025421234560">
+              +02 5421234560
+            </a>
+          </li>
+          <li class="footer__list-item footer__list-item--grid-template">
+            <img class="footer__list-item-image" src="./images/footer/call-icon.svg" width="16" height="16" alt=""
+              loading="lazy">
+            <a class="footer__list-link" href="tel:+025421234999">
+              +02 5421234999
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <p class="footer__list-item-text">Quick Links</p>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#about-us">
+              About Us
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#destinations">
+              Destination
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#package">
+              Pricing List
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#contact-us">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <p class="footer__list-item-text">Subscribe</p>
+          </li>
+          <li class="footer__list-item">
+            <form class="footer__form" action="">
+              <input class="footer__form-input" type="text" placeholder="Enter email address">
+              <button class="footer__form-button button" type="subbmit">Subscribe</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>Ⓒ 2023 All rights reserved. This is Your Company</p>
+  </footer>
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button" type="submit">
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#">
+            Home
+          </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#about-us">
+            About Us
+          </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#destinations">
+            Destination
+          </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a class="mobile-overlay__link" href="#contact-us">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
+  <script src="js/index.js" defer></script>
+</body>
+
+</html>

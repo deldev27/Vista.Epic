@@ -1,0 +1,32 @@
+// Шрифты
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/CabinCondensed-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-size: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/CabinCondensed-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-size: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/CabinCondensed-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-size: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-size: normal;
+	font-display: swap;
+}

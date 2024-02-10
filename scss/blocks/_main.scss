@@ -1,0 +1,169 @@
+.main {
+	margin-top: 80px;
+
+	&__service {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 80px;
+		}
+
+		&-item {
+			margin-bottom: 80px;
+		}
+
+		&-image {
+			padding: 0px 146px;
+		}
+
+		&-text {
+			@include fluid-text(16, 32);
+			color: var(--accent-color);
+			line-height: var(--line-height-card-text);
+		}
+	}
+
+	&__destinations {
+		margin-top: 80px;
+
+		&-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		&-subtitle {
+			max-width: 580px;
+			padding-bottom: 32px;
+		}
+
+		&-text {
+			max-width: 460px;
+			padding-bottom: 80px;
+		}
+
+		&-images {
+			display: grid;
+			justify-content: center;
+			gap: 30px;
+			grid-template-columns: 602px 602px;
+		}
+
+		&-image {
+			width: 100%;
+		}
+	}
+
+	&__about-us {
+		margin-top: 80px;
+		padding-bottom: 80px;
+		background-color: var(--background-color-2);
+
+		&-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		&-wrapper {
+			max-width: 455px;
+		}
+
+		&-info {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-card-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-text-wrapper {
+			display: flex;
+			flex-direction: column;
+			row-gap: 24px;
+			max-width: 523px;
+		}
+
+		&-card {
+			display: flex;
+			column-gap: 39px;
+
+			&-text {
+				max-width: 523px;
+			}
+		}
+	}
+
+	&__package {
+		padding: 80px 0px 56px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding-bottom: 66px;
+		}
+
+		&-subtitle {
+			max-width: 679px;
+		}
+	}
+
+	&__travel {
+		background-image: url('../images/main/travel/background-image.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 80px;
+			padding-block: 76px;
+		}
+
+		&-header {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			row-gap: 32px;
+		}
+
+		&-title {
+			max-width: 763px;
+		}
+
+		&-text {
+			line-height: var(--line-height-text);
+		}
+
+		&-button {
+			max-width: 151px;
+			display: flex;
+			align-items: center;
+			line-height: var(--line-height-text);
+			gap: 16px;
+			padding: 12px 24px;
+			background: var(--accent-color);
+		}
+	}
+}
