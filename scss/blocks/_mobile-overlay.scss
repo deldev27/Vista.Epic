@@ -13,6 +13,11 @@
 	&__close-button-wrapper {
 		display: flex;
 		justify-content: end;
+		padding-right: 76px;
+
+		@media (max-width: 450px) {
+			padding-right: 30px;
+		}
 	}
 
 	&__list {
@@ -26,6 +31,7 @@
 		padding-block: 15px;
 		padding-inline: 40px;
 		border-radius: 10px;
+
 		@include hover {
 			color: var(--white-color);
 			background-color: var(--accent-color);

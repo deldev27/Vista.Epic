@@ -9,6 +9,14 @@
 	&__container {
 		padding-bottom: 80px;
 		border-bottom: 1px solid var(--background-color-2);
+
+		@include mobile {
+			padding-inline: 49px;
+		}
+
+		@media (max-width: 560px) {
+			padding-inline: 29px;
+		}
 	}
 
 	&__socials {
@@ -17,10 +25,27 @@
 		gap: 96px;
 		row-gap: 24px;
 
+		@media (max-width: 1130px) {
+			display: grid;
+			justify-content: center;
+			grid-template-areas:
+				'social-wrapper subscribe-wrapper'
+				'contacts-us quick-links';
+		}
+
+		@include mobile {
+			gap: 35px;
+		}
+
 		&-wrapper {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+
+			@media (max-width: 1130px) {
+				row-gap: 20px;
+				grid-area: social-wrapper;
+			}
 		}
 
 		&-text {
@@ -30,6 +55,30 @@
 		.socials-list {
 			display: flex;
 			flex-direction: row;
+
+			@media (max-width: 1130px) {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	.contacts-us {
+		@media (max-width: 1130px) {
+			grid-area: contacts-us;
+		}
+	}
+
+	.quick-links {
+		@media (max-width: 1130px) {
+			grid-area: quick-links;
+			align-items: center;
+		}
+	}
+
+	.subscribe-wrapper {
+		@media (max-width: 1130px) {
+			grid-area: subscribe-wrapper;
+			align-items: center;
 		}
 	}
 
@@ -38,21 +87,38 @@
 		flex-direction: column;
 		row-gap: 16px;
 
-		&-link:hover + path,
-		[id*='Bg']:hover,
-		[id*='Soc']:hover {
-			fill: var(--accent-color);
+		@media (max-width: 560px) {
+			justify-content: center;
 		}
 
-		[id*='Bg']:hover ~ path {
-			stroke: var(--background-color);
+		@media (hover: hover) {
+			&-link:hover + path,
+			[id*='Bg']:hover,
+			[id*='Soc']:hover {
+				fill: var(--accent-color);
+			}
+
+			[id*='Bg']:hover ~ path {
+				stroke: var(--background-color);
+			}
+		}
+
+		@media (hover: none) {
+			&-link:hover + path,
+			[id*='Bg']:hover,
+			[id*='Soc']:hover {
+				fill: var(--accent-color);
+			}
+
+			[id*='Bg']:hover ~ path {
+				stroke: var(--background-color);
+			}
 		}
 
 		&-item-text {
 			@include fluid-text(16, 24);
 			font-weight: 600;
 			line-height: var(--line-height-title);
-			padding-bottom: 40px;
 		}
 
 		&-item {
@@ -64,15 +130,29 @@
 
 		&-link {
 			font-family: 'Plus Jakarta Sans', sans-serif;
+			max-width: 250px;
 		}
 
-		&-link:hover {
-			color: var(--accent-color);
+		@media (hover: hover) {
+			&-link:hover {
+				color: var(--accent-color);
+			}
+		}
+
+		@media (hover: none) {
+			&-link:active {
+				color: var(--accent-color);
+			}
 		}
 	}
 
 	&__form {
 		display: flex;
+
+		@media (max-width: 540px) {
+			flex-direction: column;
+		}
+
 		&-input {
 			color: var(--white-color);
 			background-color: var(--background-color-2);
