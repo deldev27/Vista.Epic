@@ -37,6 +37,10 @@
 			gap: 35px;
 		}
 
+		@media (max-width: 420px) {
+			gap: 15px;
+		}
+
 		&-wrapper {
 			display: flex;
 			flex-direction: column;
@@ -161,11 +165,23 @@
 			&::placeholder {
 				color: var(--white-color);
 			}
+
+			@media (max-width: 420px) {
+				font-size: 10px;
+				padding-block: 10px;
+				max-width: 100px;
+			}
 		}
 
 		&-button {
 			padding: 16px 24px;
 			background-color: var(--accent-color);
+
+			@media (max-width: 420px) {
+				font-size: 10px;
+				padding-block: 10px;
+				max-width: 100px;
+			}
 		}
 	}
 }
